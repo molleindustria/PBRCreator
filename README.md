@@ -1,5 +1,5 @@
 # PBRCreator
-Unity script to facilitate the use of PBR materials from the Internet.
+Unity editor script to facilitate the use of PBR materials from the Internet. For built-in pipeline but easily adaptable.
 
 1- Copy the folder in your Assets.
 
@@ -10,7 +10,8 @@ polyhaven.com
 3dtextures.me
 ambientcg.com
 
-3- Select the set in the assets panel, right click for the menu options. Create a material with standard or triplanar shader (built-in pipeline).
+3- Select the set in the assets panel, right click for the menu options "Create * Material from selection". 
+Create a material with standard or triplanar shader.
 
 It looks for common map names, sets the normal, converts roughness to smoothness, and combines metallic and smoothness if possible.  
 
