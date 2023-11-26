@@ -34,10 +34,16 @@ namespace PBRCreator
             CreateMatFromTexture();
         }
 
-        [MenuItem("Assets/Create TriPlanar Material from Selection ", false, 101)]
+        [MenuItem("Assets/Create TriPlanar Absolute Material from Selection ", false, 101)]
         private static void CreateTriMaterial()
         {
-            CreateMatFromTexture("StandardTriplanar");
+            CreateMatFromTexture("TriplanarAbsolute");
+        }
+
+        [MenuItem("Assets/Create TriPlanar Relative Material from Selection ", false, 101)]
+        private static void CreateTriMaterialRelative()
+        {
+            CreateMatFromTexture("TriplanarRelative");
         }
 
 
@@ -550,7 +556,7 @@ namespace PBRCreator
 
             combinedPath = pathWithoutFilename +"/"+ combinedFileName;
 
-            Debug.Log("new path " + newPath + " combined path "+ combinedPath);
+            //Debug.Log("new path " + newPath + " combined path "+ combinedPath);
 
             //string newPath = string.Format("{0}/{1}{2}{3}", pathWithoutFilename, baseFilename, to, extension);
 
